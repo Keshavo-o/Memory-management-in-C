@@ -11,13 +11,12 @@ Memory management ensures that a program uses memory efficiently and prevents is
 
 
 
-
-
-TYPES OF MEMORY IN C
+TYPES OF MEMORY IN C :
 1. Static Memory Allocation
 Definition: Memory for variables is allocated at compile time.
 Scope: Global variables, static variables.
 Lifetime: Entire duration of the program.
+Example : static functions and static variables
 
 
 
