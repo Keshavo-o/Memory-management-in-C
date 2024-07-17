@@ -1,0 +1,58 @@
+Introduction to Memory Management in C:
+
+Memory management is a crucial aspect of programming in C. It involves the allocation, deallocation, and management of memory during the execution of a program. Effective memory management is essential for creating efficient and reliable software. This introductory page will cover the basic concepts and functions involved in memory management in C.
+
+
+
+Why Memory Management is Important ?
+Memory management ensures that a program uses memory efficiently and prevents issues such as memory leaks, which can degrade system performance or cause programs to crash. Understanding memory management allows programmers to optimize their code and use system resources effectively.
+
+
+
+
+
+
+
+TYPES OF MEMORY IN C
+1. Static Memory Allocation
+Definition: Memory for variables is allocated at compile time.
+Scope: Global variables, static variables.
+Lifetime: Entire duration of the program.
+
+
+
+2. Automatic Memory Allocation
+Definition: Memory for variables is allocated at runtime when the function is called and deallocated when the function exits.
+Scope: Local variables within functions.
+Lifetime: Duration of the function call.
+
+
+
+3. Dynamic Memory Allocation
+Definition: Memory is allocated at runtime using specific functions provided by the C standard library.
+Scope: Dynamically allocated memory can be accessed throughout the program.
+Lifetime: Until the memory is explicitly deallocated.
+
+
+
+
+Dynamic Memory Management Functions
+
+1. malloc
+Syntax: void *malloc(size_t size);
+Description: Allocates a block of memory of the specified size and returns a pointer to the beginning of the block.
+
+
+2. calloc
+Syntax: void *calloc(size_t num, size_t size);
+Description: Allocates memory for an array of num elements, each of size bytes, and initializes all bytes to zero.
+
+
+3. realloc
+Syntax: void *realloc(void *ptr, size_t size);
+Description: Changes the size of the memory block pointed to by ptr to size bytes.
+
+
+4. free
+Syntax: void free(void *ptr);
+Description: Deallocates the memory previously allocated by malloc, calloc, or realloc.
